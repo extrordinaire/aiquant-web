@@ -1,0 +1,24 @@
+<div id="SideNavMobile">
+  <div class="OptionTitle">
+    <div class="TitleText">AiQuant</div>
+    <div class="ButtonClose" (click)="close()">
+      <i class="fa fa-remove" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="OptionsMenu">
+    <ul>
+      <li (click)="goTo(1)" [translate]="'nav.aboutus'">Nosotros</li>
+      <li (click)="goTo(3)" [translate]="'nav.whytoinvest'">
+        ¿Por qué invertir?
+      </li>
+      <li (click)="goTo(6)" [translate]="'nav.businessplan'">
+        Plan de negocios
+      </li>
+      <li (click)="goTo(9)" [translate]="'nav.contact'">Contacto</li>
+    </ul>
+  </div>
+  <div class="SelectedLanguage">
+    <div (click)="useLanguage('es')"><u>ES</u></div>
+    <div (click)="useLanguage('en')">EN</div>
+  </div>
+</div>

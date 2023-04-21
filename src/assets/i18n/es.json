@@ -1,0 +1,55 @@
+{
+  "page1": {
+    "princialmessage": "TUS FINANZAS REINVENTADAS"
+  },
+  "page2": {
+    "princialmessage": "SOMOS UNA FIRMA DE INVERSION Y ASESORAMIENTO FINANCIERO"
+  },
+  "page3": {
+    "princialmessage": "CREAMOS PUENTES ENTRE EL MERCADO DE INVERSIÓN TRADICIONAL Y EL UNIVERSO BLOCKCHAIN"
+  },
+  "page4": {
+    "princialmessage": "Y EL UNIVERSO",
+    "princialmessagepart2": "DE BLOCKCHAIN."
+  },
+  "page5": {
+    "princialtitle": "¿Por qué invertir?",
+    "princialmessage": "PARA PERTENECER A LA INMINENTE DIGITALIZACIÓN DEL DINERO, UNA OPORTUNIDAD DE INVERSION GENERACIONAL"
+  },
+  "page6": {
+    "princialtitle": "¿Por qué invertir?",
+    "princialmessage": "PARA PERTENECER A LA INMINENTE DIGITALIZACIÓN DEL DINERO, UNA OPORTUNIDAD DE INVERSION GENERACIONAL"
+  },
+  "page7": {
+    "princialtitle": "¿Por qué invertir?",
+    "princialmessage": "PARA ESTAR EXPUESTO A LOS ACTIVOS DIGITALES QUE ESTÁN ALTERANDO LAS INDUSTRIAS Y GENERANDO RENDIMIENTOS EXCEPCIONALES"
+  },
+  "page8": {
+    "princialtitle": "INVERTIR CON aiquant",
+    "question": "¿Por qué nos eligen nuestros clientes?",
+    "message1": "Somos profesionales altamente capacitados en activos digitales y el universo blockchain, con una excepcional experiencia que se remonta a los inicios de las criptomonedas.",
+    "message2": "Vamos más allá de los métodos tradicionales de inversion para lograr el mayor rendimiento posible y brindar a nuestros inversores exposición a todo el mundo de los activos digitales.",
+    "message3": "Nuestras metodologías de inversión rigurosas y creativas nos permiten superar los principales índices de criptomonedas."
+  },
+  "page9": {
+    "option1": "Tesis de inversión",
+    "option2": "Estrategia de inversión",
+    "option3": "Proceso de decisión"
+  },
+  "page10": {
+    "name": "Nombre",
+    "company": "Empresa",
+    "phonenumber": "Telefono",
+    "email": "E-Mail",
+    "send": "ENVIAR",
+    "message": "O envianos un correo a info@aiquantcapital.co",
+    "title": "Conocernos es",
+    "titlepart": "solo el primer paso."
+  },
+  "nav": {
+    "aboutus": "Nosotros",
+    "whytoinvest": "¿Porque invertir?",
+    "businessplan": "Plan de negocios",
+    "contact": "Contacto"
+  }
+}

@@ -1,0 +1,50 @@
+<mat-toolbar>
+  <span
+    [ngClass]="{
+      TitlelMenuWhite: optStyle == 'white',
+      TitlelMenuBlack: optStyle == 'black'
+    }"
+    >AiQuant</span
+  >
+  <span class="example-spacer"></span>
+  <div
+    [ngClass]="{
+      MenuOptionsWhite: optStyle == 'white',
+      MenuOptionsBlack: optStyle == 'black'
+    }"
+  >
+    <button mat-button class="example-icon favorite-icon" (click)="goTo(1)">
+      <span [translate]="'nav.aboutus'">Nosotros</span>
+    </button>
+    <button mat-button class="example-icon favorite-icon" (click)="goTo(3)">
+      <span [translate]="'nav.whytoinvest'">¿Porque invertir?</span>
+    </button>
+    <button mat-button class="example-icon favorite-icon" (click)="goTo(6)">
+      <span [translate]="'nav.businessplan'">Plan de negocios</span>
+    </button>
+    <button mat-button class="example-icon favorite-icon" (click)="goTo(9)">
+      <span [translate]="'nav.contact'">Contacto</span>
+    </button>
+    <button
+      mat-button
+      class="example-icon favorite-icon"
+      [matMenuTriggerFor]="menu"
+    >
+      <span style="text-transform: capitalize">{{ currentLang }}</span>
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="useLanguage('es')">Es</button>
+      <button mat-menu-item (click)="useLanguage('en')">En</button>
+    </mat-menu>
+  </div>
+  <div
+    (click)="open()"
+    [ngClass]="{
+      MenuOptionsMobileWhite: optStyle == 'white',
+      MenuOptionsMobileBlack: optStyle == 'black'
+    }"
+  >
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+</mat-toolbar>

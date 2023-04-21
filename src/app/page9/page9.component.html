@@ -1,0 +1,20 @@
+<app-sidenav id="PRINCIPALSIDENAV" [optStyle]="'black'" *ngIf="navBarOpenSideNav"></app-sidenav>
+<section id="PANELPRINCIPAL">
+    <section class="PanelContenido">
+        <ul>
+            <li (click)="openSideNav(0)" (mouseenter)="optionFocus()" (mouseleave)="optionLeave()">
+                <span [ngClass]="{ItemSelected: optionSidenav == 0 && sidenav.opened}" [translate]="'page9.option1'">Tesis de inversión</span>
+            </li>
+            <li (click)="openSideNav(1)" (mouseenter)="optionFocus()" (mouseleave)="optionLeave()">
+                <span [ngClass]="{ItemSelected: optionSidenav == 1 && sidenav.opened}" [translate]="'page9.option2'">Estrategia de
+                    inversión</span>
+            </li>
+            <li (click)="openSideNav(2)" (mouseenter)="optionFocus()" (mouseleave)="optionLeave()">
+                <span [ngClass]="{ItemSelected: optionSidenav == 2 && sidenav.opened}" [translate]="'page9.option3'">Proceso de
+                    decisión</span>
+            </li>
+        </ul>
+    </section>
+    <div class="VerticalBar" [ngClass]="{OpenVerticalBar: optionFocused}">
+    </div>
+</section>

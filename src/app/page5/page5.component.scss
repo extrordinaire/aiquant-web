@@ -1,0 +1,283 @@
+#PANELPRINCIPAL {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#PANELPRINCIPAL *{
+    font-family: Nimbus Sans D OT Bold;
+}
+
+
+.FondoUno {
+    background-color: white;
+}
+
+.EspacioSideNav {
+    padding-top: 5.7em;
+}
+
+.PanelSubContenidoDos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+.MensajePrincipal {
+    width: 8em;
+    font-family: Nimbus Sans D OT Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 60px;
+    color: black;
+    padding: 0 1em;
+    text-align: left;
+    z-index: 99;
+    span.MensajePrincipalTitle {
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: normal;
+        display: block;
+        hr {
+            display: inline-block;
+            width: 3em;
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+.PanelImagenDos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.PanelImage {
+    position: relative;
+    height: 47em;
+    width: 33.6em;
+    z-index: 2;
+    margin-top: 5%;
+}
+
+.verticalMarquee {
+    position: absolute;
+    left: -0.05em;
+    -webkit-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -moz-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -o-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 15rem;
+}
+
+.verticalMarquee p {
+    position: absolute;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #df0000;
+    font-size: 6rem;
+    width: 50em !important;
+    /**Initial Position MUST be outside of the box so it's translated Y minus 100%**/
+
+    -webkit-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -moz-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -o-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    transform: rotate(-90deg) translateY(-100%) translateX(0%);
+}
+
+/*This is a fix for Firefox, it was rotating the text without this*/
+
+@-moz-document url-prefix() {
+    .verticalMarquee p {
+        position: fixed;
+        -webkit-transform: rotate(0deg) translateY(0%) translateX(0%);
+        -moz-transform: rotate(0deg) translateY(0%) translateX(0%);
+        -o-transform: rotate(0deg) translateY(0%) translateX(0%);
+        transform: rotate(0deg) translateY(0%) translateX(0%);
+    }
+}
+
+/*************************/
+/*******ANIMATIONS********/
+/*Change animation speed here
+/****************************/
+.verticalMarquee p {
+    animation: left 40s linear infinite;
+    -moz-animation: left 40s linear infinite;
+    -webkit-animation: left 40s linear infinite;
+    animation-delay: -55s;
+}
+
+.verticalMarquee p:nth-child(2n) {
+    animation-delay: 0s;
+    margin-left: 1em;
+}
+
+.verticalMarquee p:nth-child(3n) {
+    animation-delay: 15s;
+    margin-left: 2em;
+}
+
+/*================================
+Animation:	Move the Marquee to the Left
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes left {
+    from {
+        -moz-transform: translateX(100%);
+    }
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/** Webkit Keyframes **/
+
+@-webkit-keyframes left {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*================================
+Animation: Opacity
+==================================*/
+
+@-webkit-keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.PanelContenidoDos {
+    display: inline-block;
+    width: 60%;
+}
+
+@media (max-width: 800px) {
+    .MensajePrincipal {
+        font-size: 2.5rem;
+        word-wrap: anywhere;
+    }
+}
+
+@media (max-width: 472px) {
+    .PanelContenidoDos {
+        width: 100%;
+        padding-top: 5em !important;
+    }
+
+    .PanelImagenDos {
+        padding-left: 1em;
+        width: 100%;
+        img {
+            width: 80% !important;
+        }
+    }
+
+    .PanelSubContenidoDos {
+        display: inline-block;
+        padding-left: 1em;
+        width: 22em;
+        .MensajePrincipal {
+            padding: 0;
+        }
+    }
+
+    .MensajePrincipal {
+        font-size: 1.5rem;
+        line-height: 28px;
+        word-wrap: anywhere;
+    }
+
+    .verticalMarquee {
+        left: 0 !important;
+        right: -60% !important;
+    }
+
+    .verticalMarquee p{
+        font-size: 4rem;
+    }
+
+    .MenuOptions {
+        display: none;
+    }
+    .MenuOptionsUno {
+        display: none;
+    }
+    .MenuOptionsMobile {
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+    }
+
+    .EspacioSideNav {
+        padding-top: 0em;
+    }
+}

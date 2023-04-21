@@ -1,0 +1,126 @@
+#SliderPage {
+    height: 100%;
+}
+.SliderContent {
+    height: 100%;
+}
+
+#PANELPRINCIPAL {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#PRINCIPALSIDENAV {
+    position: fixed;
+    z-index: 9997;
+    left: 0;
+    right: 0;
+    // background-color: red;
+}
+
+mat-sidenav-container {
+    height: 100%;
+    min-height: 44em;
+}
+
+mat-sidenav-content {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+mat-sidenav {
+    background-color: black;
+    width: 62vh;
+
+    .SliderContentItems {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.mat-grid-tile .mat-figure {
+    flex-direction: column;
+}
+
+.SideNavItem {
+    color: white;
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    .SideNavImg {
+        border-radius: 50%;
+        border: 1px solid white;
+        width: 5em;
+        height: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .SideNavItemContent {
+        width: 65%;
+        margin-left: 1em;
+        padding-left: 1em;
+        h4 {
+            font-family: Nimbus Sans D OT Bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        div {
+            font-family: Nimbus Sans D OT Bold;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+.NavBarOpenSideNav {
+    display: none;
+}
+
+.CloseSideNav {
+    display: 100%;
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+    // margin-bottom: 10%;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+@media (max-width: 472px) {
+    .MenuOptions {
+        display: none;
+    }
+    .MenuOptionsUno {
+        display: none;
+    }
+    .MenuOptionsMobile {
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+    }
+
+    mat-sidenav {
+        padding-bottom: 0;
+        padding-left: 1em;
+        width: 100%;
+        .CloseSideNav {
+            margin-bottom: 2%;
+        }
+    }
+}
+
+.ItemSelected {
+    color: #ff0000;
+}

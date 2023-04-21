@@ -1,0 +1,126 @@
+<app-sidenavmobile (childToParent)="goToPage($event)"></app-sidenavmobile>
+<app-sidenav id="PRINCIPALSIDENAV" [optStyle]="colorSideNav" (childToParent)="goToPage($event)"
+  [ngClass]="{NavBarOpenSideNav: navBarOpenSideNav == true}"></app-sidenav>
+<div id="SliderPage" class="swiper-container" [swiper]="config" (indexChange)="onIndexChange($event)">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <!-- SECCION 1  -->
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page1></app-page1>
+      </div>
+    </div>
+    <!-- SECCION 2  -->
+    <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page2></app-page2>
+      </div>
+    </div>
+    <!-- SECCION 3  -->
+    <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page3></app-page3>
+      </div>
+    </div>
+    <!-- SECCION 4  -->
+    <!-- <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page4></app-page4>
+      </div>
+    </div> -->
+    <!-- SECCION 5  -->
+    <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page5></app-page5>
+      </div>
+    </div>
+    <!-- SECCION 6  -->
+    <!-- <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page6></app-page6>
+      </div>
+    </div> -->
+    <!-- SECCION 7  -->
+    <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page7></app-page7>
+      </div>
+    </div>
+    <!-- SECCION 8  -->
+    <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page8></app-page8>
+      </div>
+    </div>
+    <!-- SECCION 9  -->
+    <div class="swiper-slide" style="z-index: 99;">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <mat-sidenav-container class="example-container">
+          <mat-sidenav #sidenav mode="over" position="end" (closed)="sideNavClosed()">
+            <div class="CloseSideNav" (click)="closeSideNav()">
+              <span><img src="/assets/img/close-icon.svg" alt="" /></span>
+            </div>
+            <div class="SliderContentItems">
+              <div class="SideNavItem" style="border-bottom: 1px solid #FFF;">
+                <div class="SideNavImg">
+                  <img src="/assets/img/img5.png" alt="">
+                </div>
+                <div class="SideNavItemContent" *ngIf="currentLang == 'es'">
+                  <h4>{{currentContentSideNav[0].title}}</h4>
+                  <div>{{currentContentSideNav[0].content}}</div>
+                </div>
+                <div class="SideNavItemContent" *ngIf="currentLang == 'en'">
+                  <h4>{{currentContentSideNavEn[0].title}}</h4>
+                  <div>{{currentContentSideNavEn[0].content}}</div>
+                </div>
+              </div>
+              <div class="SideNavItem" style="border-bottom: 1px solid #FFF;">
+                <div class="SideNavImg">
+                  <img src="/assets/img/img5.png" alt="">
+                </div>
+                <div class="SideNavItemContent" *ngIf="currentLang == 'es'">
+                  <h4>{{currentContentSideNav[1].title}}</h4>
+                  <div>{{currentContentSideNav[1].content}}</div>
+                </div>
+                <div class="SideNavItemContent" *ngIf="currentLang == 'en'">
+                  <h4>{{currentContentSideNavEn[1].title}}</h4>
+                  <div>{{currentContentSideNavEn[1].content}}</div>
+                </div>
+              </div>
+              <div class="SideNavItem">
+                <div class="SideNavImg">
+                  <img src="/assets/img/img5.png" alt="">
+                </div>
+                <div class="SideNavItemContent" *ngIf="currentLang == 'es'">
+                  <h4>{{currentContentSideNav[2].title}}</h4>
+                  <div>{{currentContentSideNav[2].content}}</div>
+                </div>
+                <div class="SideNavItemContent" *ngIf="currentLang == 'en'">
+                  <h4>{{currentContentSideNavEn[2].title}}</h4>
+                  <div>{{currentContentSideNavEn[2].content}}</div>
+                </div>
+              </div>
+            </div>
+
+          </mat-sidenav>
+
+          <mat-sidenav-content>
+            <app-page9 [sidenav]="sidenav" [navBarOpenSideNav]="navBarOpenSideNav"
+              (sideNavchildToParent)="openSideNav($event)"></app-page9>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+      </div>
+    </div>
+    <!-- SECCION 10  -->
+    <div class="swiper-slide">
+      <div class="SliderContent" fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+        <app-page10></app-page10>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-scrollbar" [hidden]="config.scrollbar === false"></div>
+  <div class="swiper-pagination" [hidden]="config.pagination === false"></div>
+
+  <!-- <div class="swiper-button-prev" [hidden]="config.navigation === false"></div>
+  <div class="swiper-button-next" [hidden]="config.navigation === false"></div> -->
+</div>

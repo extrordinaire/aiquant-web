@@ -1,0 +1,55 @@
+{
+  "page1": {
+    "princialmessage": "REINVENTING YOUR FINANCES"
+  },
+  "page2": {
+    "princialmessage": "WE ARE AN INVESTMENT AND FINANCIAL ADVISORY FIRM"
+  },
+  "page3": {
+    "princialmessage": "WE BUILD BRIDGES BETWEEN THE TRADITIONAL FINANCIAL MARKETS AND THE BLOCKCHAIN UNIVERSE."
+  },
+  "page4": {
+    "princialmessage": "AND THE BLOCKCHAIN UNIVERSE.",
+    "princialmessagepart2": ""
+  },
+  "page5": {
+    "princialtitle": "Why invest?",
+    "princialmessage": "TO BELONG TO THE IMMINENT DIGITALISATION OF MONEY, A GENERATIONAL INVESTMENT OPPORTUNITY."
+  },
+  "page6": {
+    "princialtitle": "¿Por qué invertir?",
+    "princialmessage": "PARA PERTENECER A LA INMINENTE DIGITALIZACIÓN DEL DINERO, UNA OPORTUNIDAD DE INVERSION GENERACIONAL"
+  },
+  "page7": {
+    "princialtitle": "Why invest?",
+    "princialmessage": "TO BE EXPOSED TO THE DIGITAL ASSETS THAT ARE DISRUPTING INDUSTRIES AND YIELDING EXCEPTIONAL RETURNS"
+  },
+  "page8": {
+    "princialtitle": "INVESTING WITH aiquant",
+    "question": "Why do our clients choose us?",
+    "message1": "We are professionals highly trained on digital assets and the blockchain universe, with exceptional experience dating back to the beginnings of cryptocurrencies.",
+    "message2": "We go beyond traditional investment methods to achieve the highest possible return and provide our investors exposure to the whole world of digital assets",
+    "message3": "Our rigorous yet creative investment methodologies allow us to exceed the major cryptocurrencies indexes and benchmarks"
+  },
+  "page9": {
+    "option1": "Investment Thesis",
+    "option2": "Investment Strategy",
+    "option3": "Decision Making Criteria"
+  },
+  "page10": {
+    "name": "Name",
+    "company": "Company",
+    "phonenumber": "Phone number",
+    "email": "Email",
+    "send": "SEND",
+    "message": "Or send us an email to info@aiquantcapital.co",
+    "title": "Meeting us is only the first step",
+    "titlepart": ""
+  },
+  "nav": {
+    "aboutus": "About Us",
+    "whytoinvest": "Why invest?",
+    "businessplan": "Business Plan",
+    "contact": "Contact"
+  }
+}

@@ -1,0 +1,206 @@
+#PANELPRINCIPAL {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#PANELPRINCIPAL * {
+    font-family: Nimbus Sans D OT Bold;
+}
+
+.FondoDos {
+    background-color: black;
+}
+
+.PanelContenido {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0em;
+}
+
+.EspacioSideNav {
+    padding-top: 5.7em;
+}
+
+.PanelItemDos {
+    text-align: left;
+    display: inline-block;
+    width: 40%;
+    height: 80%;
+    color: white;
+    padding-top: 5%;
+    padding-left: 4em;
+    h1 {
+        font-size: 40px;
+        width: 80%;
+        line-height: 1em;
+    }
+}
+
+.PanelImagenDos {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    height: 80%;
+    width: 50%;
+    vertical-align: top;
+    img {
+        position: relative;
+        height: 80%;
+        width: 80%;
+        z-index: 2;
+        margin-top: 5%;
+    }
+}
+
+.PanelContenidoTexto {
+    font-size: 20px;
+    width: 80%;
+    ul {
+        li {
+            margin-bottom: 1em;
+            span {
+                position: relative;
+                left: 0.5em;
+            }
+        }
+        li::marker {
+            content: url("/assets/img/arrow-list.svg");
+        }
+    }
+}
+
+.TitlePage {
+    font-size: 4rem;
+    width: 100%;
+    color: white;
+    white-space: nowrap;
+    z-index: 99;
+    text-align: center;
+    span {
+        position: absolute;
+        width: 100%;
+        margin-top: 0.3em;
+        font-family: Nimbus Sans D OT Bold;
+        font-style: normal;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        height: 0.4em;
+        display: block;
+        font-size: 4rem;
+        white-space: nowrap;
+
+        // -moz-transform: translateX(100%);
+        // -webkit-transform: translateX(100%);
+        // transform: translateX(100%);
+        // -moz-animation: scroll-left 0.5s linear infinite;
+        // -webkit-animation: scroll-left 0.5s linear infinite;
+        // animation: scroll-left 5s linear infinite;
+    }
+}
+
+.marqueeCuatro {
+    position: absolute;
+    top: 0.5em;
+    font-size: 4rem;
+    // width: 100%;
+    width: 200%;
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    z-index: 99;
+    text-align: center;
+    span {
+        font-family: Nimbus Sans D OT Bold;
+        font-style: normal;
+        // font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        height: 0.4em;
+        display: block;
+        font-size: 4rem;
+        white-space: nowrap;
+
+        // -moz-transform: translateX(100%);
+        // -webkit-transform: translateX(100%);
+        // transform: translateX(100%);
+        // -moz-animation: scroll-left 0.5s linear infinite;
+        // -webkit-animation: scroll-left 0.5s linear infinite;
+        // animation: scroll-left 5s linear infinite;
+    }
+}
+
+@media (max-width: 742px) {
+    #PANELPRINCIPAL {
+        display: inline-block;
+        padding-top: 12em;
+        width: 100%;
+    }
+    .PanelDivision {
+        position: relative;
+    }
+    .PanelItemDos {
+        top: 6em;
+        padding-top: 0;
+        position: absolute;
+        left: 0;
+        z-index: 99;
+        width: 100% !important;
+        text-align: right;
+        padding-left: 0;
+        h1 {
+            width: 50% !important;
+            display: inline-block;
+            text-align: left;
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+            font-size: 27px;
+        }
+        .PanelContenidoTexto {
+            width: 50% !important;
+            display: inline-block;
+            text-align: left;
+            padding-right: 1em;
+            font-size: 1rem;
+        }
+    }
+
+    .PanelImagenDos {
+        width: 100%;
+        padding-left: 1em;
+        text-align: left;
+    }
+
+    .TitlePage {
+        display: initial;
+        font-size: unset;
+        width: 100%;
+        span {
+            font-size: 40px;
+            width: 8em;
+            white-space: break-spaces;
+            text-align: left;
+            margin-top: -1.7em;
+            line-height: 1em;
+            left: 0.3em;
+        }
+    }
+}
+
+@media (max-width: 472px) {
+    .PanelItemDos {
+        h1 {
+            width: 100% !important;
+        }
+        .PanelContenidoTexto {
+            width: 94% !important;
+        }
+    }
+}

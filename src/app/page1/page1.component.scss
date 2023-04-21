@@ -1,0 +1,69 @@
+.FondoHome {
+    background-image: url("/assets/img/animated-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#PANELPRINCIPAL {
+    height: 100%;
+    overflow-y: hidden;
+}
+#PANELPRINCIPAL *{
+    font-family: Nimbus Sans D OT Bold;
+}
+
+.PanelContenido {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.EspacioSideNav{
+    padding-top: 5.7em;
+}
+
+.MensajePrincipalDos {
+    width: 70%;
+    font-family: Nimbus Sans D OT Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 101px;
+    text-align: center;
+    color: #ffffff;
+    padding: 1em;
+    word-wrap: break-word;
+    z-index: 99;
+}
+
+@media (max-width: 800px) {
+    .MensajePrincipalDos {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+}
+
+@media (max-width: 614px) {
+    .MensajePrincipalDos {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 472px) {
+    .MensajePrincipalDos {
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .MensajePrincipalDos {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+}
+
+

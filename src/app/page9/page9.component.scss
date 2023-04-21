@@ -1,0 +1,103 @@
+.EspacioSideNav{
+    padding-top: 5.7em;
+}
+
+#PANELPRINCIPAL *{
+    font-family: Nimbus Sans D OT Bold;
+}
+
+
+#PANELPRINCIPAL {
+    height: 100%;
+    overflow-y: hidden;
+    .PanelContenido {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        ul {
+            margin-left: 6em;
+            list-style: none;
+            li {
+                position: relative;
+                font-family: Nimbus Sans D OT Bold;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 77px;
+                margin-bottom: 1em;
+                padding-left: 1ch;
+                cursor: pointer;
+                span {
+                    vertical-align: middle;
+                }
+            }
+
+            li:hover {
+                color: #ff0000;
+            }
+            li:hover::before {
+                display: block;
+                position: absolute;
+                left: -.5em;
+                content: url("/assets/img/arrow-right.svg");
+                //margin-right: 0.3em;
+            }
+        }
+    }
+}
+
+.ItemSelected {
+    color: #ff0000;
+}
+
+.VerticalBar {
+    position: absolute;
+    background: black;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3.5em;
+    z-index: 99;
+}
+
+.OpenVerticalBar{
+    animation-name: hintBar;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes hintBar {
+    0%{width: 3.5em;}
+    100%{width: 7em;}
+}
+
+#PRINCIPALSIDENAV{
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 472px) {
+    .PanelContenido {
+        span {
+            font-size: 2.5rem;
+            line-height: 50px;
+            word-wrap: anywhere;
+        }
+        li {
+            margin-bottom: 0.5em !important;
+            line-height: 3px !important;
+        }
+        li:hover::before {
+        }
+        ul {
+            padding-left: 1em !important;
+        }
+    }
+
+    .VerticalBar{
+        display: none;
+    }
+}

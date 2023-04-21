@@ -1,0 +1,120 @@
+#PANELPRINCIPAL {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#PANELPRINCIPAL *{
+    font-family: Nimbus Sans D OT Bold;
+}
+
+
+.FondoUno {
+    background-color: white;
+}
+
+.PanelContenido {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.EspacioSideNav{
+    padding-top: 5.7em;
+}
+
+
+.MensajePrincipal {
+    width: 10em;
+    font-family: Nimbus Sans D OT Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 101px;
+    text-align: center;
+    color: black;
+    padding: 1em;
+    word-wrap: anywhere;
+    z-index: 99;
+}
+
+.marquee {
+    position: absolute;
+    bottom: -0.4em;
+    font-size: 15rem;
+    width: 100%;
+    position: absolute;
+    color: #ccc;
+    white-space: nowrap;
+    span {
+        position: absolute;
+        bottom: 0.2em;
+        font-family: Nimbus Sans D OT Bold;
+        font-style: normal;
+        // font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ccc;
+        height: 0.4em;
+        display: block;
+        font-size: 17rem;
+        white-space: nowrap;
+        padding-left: 0.5em;
+
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: scroll-left 30s linear infinite;
+        -webkit-animation: scroll-left 30s linear infinite;
+        animation: scroll-left 30s linear infinite;
+        animation-delay: -45s;
+    }
+    span:nth-child(2n) {
+        animation-delay: 0s;
+    }
+}
+
+@media (max-width: 800px) {
+    .MensajePrincipal {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+}
+
+@media (max-width: 614px) {
+    .MensajePrincipal {
+        font-size: 3rem;
+        line-height: 50px;
+        word-wrap: anywhere;
+    }
+}
+
+@media (max-width: 472px) {
+    .MensajePrincipal {
+        font-size: 1.8rem;
+        line-height: 40px;
+        word-wrap: anywhere;
+    }
+
+    .MenuOptions {
+        display: none;
+    }
+    .MenuOptionsUno {
+        display: none;
+    }
+    .MenuOptionsMobile {
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .MensajePrincipal {
+        font-size: 1.5rem;
+        line-height: 35px;
+        word-wrap: break-word;
+    }
+}

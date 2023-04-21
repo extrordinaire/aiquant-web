@@ -1,0 +1,92 @@
+<section id="PANELPRINCIPAL" class="FondoDos">
+  <section class="PanelContenido EspacioSideNav">
+    <div class="Formulario">
+      <h2 class="Title">
+        <span [translate]="'page10.title'">Conocernos es</span><br />
+        <span [translate]="'page10.titlepart'">solo el primer paso.</span>
+      </h2>
+      <form>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label [translate]="'page10.name'">Nombre</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label [translate]="'page10.company'">Empresa</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label [translate]="'page10.phonenumber'">Telefono</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label [translate]="'page10.email'">E-Mail</mat-label>
+          <input type="email" matInput />
+        </mat-form-field>
+        <div class="PanelButtons">
+          <button mat-button class="SaveButton">
+            <span [translate]="'page10.send'">ENVIAR</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+        </div>
+        <div class="PiePagina">
+          <span [translate]="'page10.message'"
+            >O envianos un correo a info@AiQuantcapital.co</span
+          >
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="verticalMarquee">
+    <p *ngIf="currentLang == 'es'">
+      COMENCEMOS ALGO GRANDE <span>JUNTOS</span>COMENCEMOS ALGO GRANDE
+      <span>JUNTOS</span>
+    </p>
+    <p *ngIf="currentLang == 'es'">
+      COMENCEMOS ALGO GRANDE <span>JUNTOS</span>COMENCEMOS ALGO GRANDE
+      <span>JUNTOS</span>
+    </p>
+    <p *ngIf="currentLang == 'es'">COMENCEMOS</p>
+
+    <p *ngIf="currentLang == 'es'">
+      COMENCEMOS ALGO GRANDE <span>JUNTOS</span>COMENCEMOS ALGO GRANDE
+      <span>JUNTOS</span>
+    </p>
+
+    <p *ngIf="currentLang == 'en'">
+      LET'S START SOMETHING <span>TOGETHER</span> LET'S START SOMETHING
+      <span>TOGETHER</span>
+    </p>
+    <p *ngIf="currentLang == 'en'">
+      LET'S START SOMETHING <span>TOGETHER</span> LET'S START SOMETHING
+      <span>TOGETHER</span>
+    </p>
+    <p *ngIf="currentLang == 'en'">LET'S START</p>
+
+    <p *ngIf="currentLang == 'en'">
+      LET'S START SOMETHING <span>TOGETHER</span> LET'S START SOMETHING
+      <span>TOGETHER</span>
+    </p>
+  </div>
+
+  <div class="verticalMarquee verticalMarqueeRevert">
+    <p *ngIf="currentLang == 'es'">
+      COMENCEMOS ALGO GRANDE <span>JUNTOS</span> COMENCEMOS ALGO GRANDE
+      <span>JUNTOS</span>
+    </p>
+    <p *ngIf="currentLang == 'es'">
+      COMENCEMOS ALGO GRANDE <span>JUNTOS</span> COMENCEMOS ALGO GRANDE
+      <span>JUNTOS</span>
+    </p>
+    <p *ngIf="currentLang == 'es'">COMENCEMOS</p>
+
+    <p *ngIf="currentLang == 'en'">
+      LET'S START SOMETHING <span>TOGETHER</span> LET'S START SOMETHING
+      <span>TOGETHER</span>
+    </p>
+    <p *ngIf="currentLang == 'en'">
+      LET'S START SOMETHING <span>TOGETHER</span> LET'S START SOMETHING
+      <span>TOGETHER</span>
+    </p>
+    <p *ngIf="currentLang == 'en'">LET'S START</p>
+  </div>
+</section>

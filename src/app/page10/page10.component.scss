@@ -1,0 +1,271 @@
+#PANELPRINCIPAL *{
+    font-family: Nimbus Sans D OT Bold;
+}
+
+#PANELPRINCIPAL {
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.EspacioSideNav{
+    padding-top: 5.7em;
+}
+
+.FondoDos {
+    background-color: black;
+}
+
+.PanelContenido {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    color: white;
+}
+
+.Formulario {
+    text-align: center;
+    .Title {
+        width: 11em;
+        text-align: center;
+        font-size: 68px;
+        line-height: 1em;
+    }
+    form {
+        display: inline-block;
+        width: 45em;
+    }
+    .PiePagina {
+        margin-top: 2em;
+        text-align: left;
+    }
+}
+
+form {
+    mat-form-field {
+        width: 100%;
+        mat-label {
+            color: white;
+        }
+    }
+}
+
+mat-icon.material-icons{
+font-family: 'Material Icons' !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: white !important;
+}
+
+::ng-deep.mat-form-field-underline::before {
+    /*change color of underline*/
+    background-color: white !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: white !important;
+}
+
+.PanelButtons {
+    text-align: right;
+}
+.SaveButton {
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 0.5em 1.5em;
+}
+
+.SaveButton:hover{
+    color: black;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+@media (max-width: 614px) {
+    .Formulario {
+        width: 100%;
+        padding: 0 2em;
+    }
+
+    .verticalMarquee {
+        display: none;
+    }
+}
+
+@media (max-width: 472px) {
+    .Formulario {
+        .Title {
+            font-size: 1.5rem;
+            width: 100%;
+        }
+        form{
+            width: 100%;
+        }
+        .PiePagina{
+            width: 60%;
+        }
+    }
+}
+
+.verticalMarquee {
+    position: absolute;
+    left: 0.2em;
+    -webkit-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -moz-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -o-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 15rem;
+}
+
+.verticalMarqueeRevert {
+    right: 0.2em !important;
+    left: unset !important;
+    transform: rotate(-270deg) translateY(-100%) translateX(0%);
+}
+
+.verticalMarquee p {
+    position: absolute;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 4rem;
+    width: 50em !important;
+    /**Initial Position MUST be outside of the box so it's translated Y minus 100%**/
+
+    -webkit-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -moz-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    -o-transform: rotate(-90deg) translateY(-100%) translateX(0%);
+    transform: rotate(-90deg) translateY(-100%) translateX(0%);
+}
+
+.verticalMarquee span {
+    color: white !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white !important;
+}
+
+/*This is a fix for Firefox, it was rotating the text without this*/
+
+@-moz-document url-prefix() {
+    .verticalMarquee p {
+        position: fixed;
+        -webkit-transform: rotate(0deg) translateY(0%) translateX(0%);
+        -moz-transform: rotate(0deg) translateY(0%) translateX(0%);
+        -o-transform: rotate(0deg) translateY(0%) translateX(0%);
+        transform: rotate(0deg) translateY(0%) translateX(0%);
+    }
+}
+
+/*************************/
+/*******ANIMATIONS********/
+/*Change animation speed here
+/****************************/
+.verticalMarquee p {
+    animation: left 30s linear infinite;
+    -moz-animation: left 30s linear infinite;
+    -webkit-animation: left 30s linear infinite;
+    animation-delay: -45s;
+}
+
+
+.verticalMarquee p:nth-child(2n) {
+    animation-delay: -2s;
+    margin-left: 1em;
+}
+
+.verticalMarquee p:nth-child(3n) {
+    animation-delay: 12s;
+}
+
+/*================================
+Animation:	Move the Marquee to the Left
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes left {
+    from {
+        -moz-transform: translateX(100%);
+    }
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/** Webkit Keyframes **/
+
+@-webkit-keyframes left {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*================================
+Animation: Opacity
+==================================*/
+
+@-webkit-keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
