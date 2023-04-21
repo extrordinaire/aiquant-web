@@ -45,14 +45,14 @@
     position: absolute;
     bottom: -0.4em;
     font-size: 15rem;
-    width: 200%;
+    width: fit-content;
     position: absolute;
     color: var(--carousel-text-color,#ccc);
     white-space: nowrap;
     span {
         position: absolute;
         bottom: 0.2em;
-        size: 100%;
+        width: fit-content;
         font-family: Nimbus Sans D OT Bold;
         font-style: normal;
         // font-weight: bold;
@@ -63,7 +63,6 @@
         display: block;
         padding: 0rem 5rem;
         font-size: 17rem;
-        white-space: nowrap;
         animation: scroll-left 30s linear infinite;
         animation-delay: 0s;
     }
