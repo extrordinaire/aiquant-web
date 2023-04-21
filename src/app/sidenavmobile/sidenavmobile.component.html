@@ -18,11 +18,11 @@
     </ul>
   </div>
   <div class="SelectedLanguage" *ngIf="currentLang == 'es'">
-    <div (click)="useLanguage('es')"><u>ES</u></div>
-    <div (click)="useLanguage('en')">EN</div>
+    <div (click)="useLanguage('en')">EN 🇬🇧</div>
+    <div (click)="useLanguage('es')"><u>ES 🇪🇸</u></div>
   </div>
   <div class="SelectedLanguage" *ngIf="currentLang != 'es'">
-    <div (click)="useLanguage('es')">ES</div>
-    <div (click)="useLanguage('en')"><u>EN</u></div>
+    <div (click)="useLanguage('en')"><u>EN</u> 🇬🇧</div>
+    <div (click)="useLanguage('es')">ES 🇪🇸</div>
   </div>
 </div>
