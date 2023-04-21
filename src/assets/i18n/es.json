@@ -3,7 +3,7 @@
     "princialmessage": "TUS FINANZAS REINVENTADAS"
   },
   "page2": {
-    "princialmessage": "SOMOS UNA FIRMA DE INVERSION Y ASESORAMIENTO FINANCIERO"
+    "princialmessage": "SOMOS UNA FIRMA DE INVERSIÓN A BASE DE IA Y ALGORITMOS."
   },
   "page3": {
     "princialmessage": "CREAMOS PUENTES ENTRE EL MERCADO DE INVERSIÓN TRADICIONAL Y EL UNIVERSO BLOCKCHAIN"
@@ -25,7 +25,7 @@
     "princialmessage": "PARA ESTAR EXPUESTO A LOS ACTIVOS DIGITALES QUE ESTÁN ALTERANDO LAS INDUSTRIAS Y GENERANDO RENDIMIENTOS EXCEPCIONALES"
   },
   "page8": {
-    "princialtitle": "INVERTIR CON aiquant",
+    "princialtitle": "INVERTIR CON AIQUANT",
     "question": "¿Por qué nos eligen nuestros clientes?",
     "message1": "Somos profesionales altamente capacitados en activos digitales y el universo blockchain, con una excepcional experiencia que se remonta a los inicios de las criptomonedas.",
     "message2": "Vamos más allá de los métodos tradicionales de inversion para lograr el mayor rendimiento posible y brindar a nuestros inversores exposición a todo el mundo de los activos digitales.",
@@ -42,7 +42,7 @@
     "phonenumber": "Telefono",
     "email": "E-Mail",
     "send": "ENVIAR",
-    "message": "O envianos un correo a info@aiquantcapital.co",
+    "message": "",
     "title": "Conocernos es",
     "titlepart": "solo el primer paso."
   },
@@ -51,5 +51,49 @@
     "whytoinvest": "¿Porque invertir?",
     "businessplan": "Plan de negocios",
     "contact": "Contacto"
-  }
+  },
+  "contentSideNavEs": [
+    [
+      {
+        "title": "Ciclo de innovación",
+        "content": "La tecnología blockchain se encuentra actualmente en una etapa muy incipiente con potencial para un gran crecimiento, a medida que aumenta su adopción, también lo hará su utilidad y valor intrínseco."
+      },
+      {
+        "title": "Nueva clase de activo financiero",
+        "content": "Los criptoactivos son cada vez mas reconocidos como una nueva clase de activo financiero por las principales instituciones y administradores de inversion."
+      },
+      {
+        "title": "Diversificación",
+        "content": "Dada su nula correlación con activos financieros tradicionales, los criptoactivos son un instrumento financiero ideal para incluir en un portafolio de inversión."
+      }
+    ],
+    [
+      {
+        "title": "Maximización de retorno",
+        "content": "Ejecutamos estrategias de inversión eficientemente y sin emociones, esto garantiza una ejecución rápida y precisa."
+      },
+      {
+        "title": "Administración de portfolio",
+        "content": "Monitoreamos y evaluamos tendencias en tiempo real, optimizando el desempeño vs el benchmark."
+      },
+      {
+        "title": "Asignación del fondo",
+        "content": "Nuestros sistemas aprenden y se adaptan continuamente a medida que analizan grandes volúmenes de datos."
+      }
+    ],
+    [
+      {
+        "title": "Cyclical Analysis",
+        "content": "This process involves monitoring news and events that can affect the market. Algorithms use natural language processing and machine learning techniques to analyze large amounts of data, such as news, blogs, and social media, to identify trends and patterns."
+      },
+      {
+        "title": "Technical Analysis",
+        "content": "This process involves using technical tools to analyze historical and current market data. Technical indicators are used to predict future market behavior and to identify buying and selling opportunities."
+      },
+      {
+        "title": "Quantitative Analysis",
+        "content": "This process involves using mathematical and statistical models to evaluate the profitability of investments."
+      }
+    ]
+  ]
 }

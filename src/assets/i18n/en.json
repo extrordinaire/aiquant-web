@@ -3,7 +3,7 @@
     "princialmessage": "REINVENTING YOUR FINANCES"
   },
   "page2": {
-    "princialmessage": "WE ARE AN INVESTMENT AND FINANCIAL ADVISORY FIRM"
+    "princialmessage": "WE ARE AN AI AND ALGORITHM-BASED INVESTMENT FIRM"
   },
   "page3": {
     "princialmessage": "WE BUILD BRIDGES BETWEEN THE TRADITIONAL FINANCIAL MARKETS AND THE BLOCKCHAIN UNIVERSE."
@@ -22,10 +22,10 @@
   },
   "page7": {
     "princialtitle": "Why invest?",
-    "princialmessage": "TO BE EXPOSED TO THE DIGITAL ASSETS THAT ARE DISRUPTING INDUSTRIES AND YIELDING EXCEPTIONAL RETURNS"
+    "princialmessage": "TO BE POSITIONED IN MARKETS OPERATED BY CUTTING-EDGE TECHNOLOGY"
   },
   "page8": {
-    "princialtitle": "INVESTING WITH aiquant",
+    "princialtitle": "INVESTING WITH AIQUANT",
     "question": "Why do our clients choose us?",
     "message1": "We are professionals highly trained on digital assets and the blockchain universe, with exceptional experience dating back to the beginnings of cryptocurrencies.",
     "message2": "We go beyond traditional investment methods to achieve the highest possible return and provide our investors exposure to the whole world of digital assets",
@@ -42,7 +42,7 @@
     "phonenumber": "Phone number",
     "email": "Email",
     "send": "SEND",
-    "message": "Or send us an email to info@aiquantcapital.co",
+    "message": "",
     "title": "Meeting us is only the first step",
     "titlepart": ""
   },
@@ -51,5 +51,49 @@
     "whytoinvest": "Why invest?",
     "businessplan": "Business Plan",
     "contact": "Contact"
-  }
+  },
+  "contentSideNavEn": [
+    [
+      {
+        "title": "Innovation cycle",
+        "content": "The blockchain technology is currently at a very early stage with potential for huge growth, as its adoption increases so will its utility and intrinsic value."
+      },
+      {
+        "title": "New asset class",
+        "content": "Cryptocurrencies are starting to get recognized as a new asset class by the main institutions and financial players"
+      },
+      {
+        "title": "Diversification",
+        "content": "Given its lack of correlation with the traditional financial assets, digital assets are an ideal instrument to include in a portfolio."
+      }
+    ],
+    [
+      {
+        "title": "Return Maximization",
+        "content": "We execute investment strategies efficiently and without emotions, ensuring fast and accurate execution."
+      },
+      {
+        "title": "Portfolio Administration",
+        "content": "We monitor and evaluate trends in real-time, optimizing performance vs the benchmark."
+      },
+      {
+        "title": "Portfolio Balancing",
+        "content": "Our systems continuously learn and adapt as they analyze large volumes of data."
+      }
+    ],
+    [
+      {
+        "title": "Fundamental Analysis",
+        "content": "Comprehensive study about the organisation, the attractiveness of the market, the value proposition, the financials and tokenomics, the timeline for implementation and code analysis."
+      },
+      {
+        "title": "Technical Analysis",
+        "content": "Graphic analysis to optimize the moment to buy and sell each digital asset."
+      },
+      {
+        "title": "Quantitative Analysis",
+        "content": "Asset weighting tools that allow us to balance the risk and reward of our portfolio."
+      }
+    ]
+  ]
 }
