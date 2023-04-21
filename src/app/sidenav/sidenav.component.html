@@ -33,13 +33,9 @@
       <span style="text-transform: capitalize">{{ currentLang }}</span>
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
-    <mat-menu #menu="matMenu" *ngIf="currentLang != 'es'">
-      <button mat-menu-item (click)="useLanguage('en')"><u>En</u> 🇬🇧</button>
-      <button mat-menu-item (click)="useLanguage('es')">Es 🇪🇸</button>
-    </mat-menu>
-    <mat-menu #menu="matMenu" *ngIf="currentLang == 'es'">
+    <mat-menu #menu="matMenu">
       <button mat-menu-item (click)="useLanguage('en')">En 🇬🇧</button>
-      <button mat-menu-item (click)="useLanguage('es')"><u>Es</u>🇪🇸</button>
+      <button mat-menu-item (click)="useLanguage('es')">Es 🇪🇸</button>
     </mat-menu>
   </div>
   <div

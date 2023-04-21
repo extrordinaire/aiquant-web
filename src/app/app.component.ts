@@ -25,7 +25,12 @@ export class AppComponent {
   currentPosition = window.pageYOffset;
   scrollBlock = true;
   colorSideNav = "white";
-  currentContentSideNav: any;
+  currentContentSideNav: Array<{
+    titleES: string;
+    titleEN: string;
+    contentES: string;
+    contentEN: string;
+  }> = [];
   optionSidenav: Number = 0;
   navBarOpenSideNav: boolean = false;
   currentLang: string = "";
@@ -151,12 +156,12 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    this.currentContentSideNav = this.contentSideNav[0][0].titleEN;
+    this.currentContentSideNav = this.contentSideNav[0];
   }
 
   public onIndexChange(index: number) {
     this.currentPage = index;
-    console.log("Swiper index: ", index);
+
     if (index == 1 || index == 3 || index == 4 || index == 6 || index == 8) {
       this.colorSideNav = "black";
     } else {
@@ -169,8 +174,6 @@ export class AppComponent {
   }
 
   openSideNav(opt: any) {
-    console.log("opt", opt);
-
     this.currentContentSideNav = this.contentSideNav[opt];
     this.sidenav.open();
     this.navBarOpenSideNav = true;
