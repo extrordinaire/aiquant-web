@@ -17,8 +17,12 @@
       <li (click)="goTo(9)" [translate]="'nav.contact'">Contacto</li>
     </ul>
   </div>
-  <div class="SelectedLanguage">
+  <div class="SelectedLanguage" *ngIf="currentLang == 'es'">
     <div (click)="useLanguage('es')"><u>ES</u></div>
     <div (click)="useLanguage('en')">EN</div>
+  </div>
+  <div class="SelectedLanguage" *ngIf="currentLang != 'es'">
+    <div (click)="useLanguage('es')">ES</div>
+    <div (click)="useLanguage('en')"><u>EN</u></div>
   </div>
 </div>
