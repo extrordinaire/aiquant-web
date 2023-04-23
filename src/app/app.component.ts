@@ -99,9 +99,9 @@ export class AppComponent {
         titleES: "Análisis coyuntural",
         contentES:
           "Este proceso implica el seguimiento de las noticias y eventos que pueden afectar el mercado. Los algoritmos cuentan con técnicas de procesamiento de lenguaje natural y aprendizaje automático para analizar grandes cantidades de datos, como noticias, blogs y redes sociales, para identificar tendencias y patrones.",
-        titleEN: "Fundamental Analysis",
+        titleEN: "Situational Analysis",
         contentEN:
-          "Comprehensive study about the organisation, the attractiveness of the market, the value proposition, the financials and tokenomics, the timeline for implementation and code analysis.",
+          "This process involves monitoring news and events that may impact the market. Algorithms employ natural language processing and machine learning techniques to analyze large amounts of data, such as news, blogs, and social networks, to identify trends and patterns.",
       },
       {
         titleES: "Análisis técnico",
@@ -109,7 +109,7 @@ export class AppComponent {
           "Este proceso implica el uso de herramientas técnicas para analizar los datos históricos y actuales del mercado. Se utilizan indicadores técnicos para predecir el comportamiento futuro del mercado y para identificar oportunidades de compra y venta.",
         titleEN: "Technical Analysis",
         contentEN:
-          "Graphic analysis to optimize the moment to buy and sell each digital asset.",
+          "This process involves the use of technical tools to analyze historical and current market data. Technical indicators are used to predict future market behavior and to identify buying and selling opportunities.",
       },
       {
         titleES: "Análisis cuantitativo",
@@ -117,7 +117,7 @@ export class AppComponent {
           "Este proceso implica el uso de modelos matemáticos y estadísticos para evaluar la rentabilidad de las inversiones.",
         titleEN: "Quantitative Analysis",
         contentEN:
-          "Asset weighting tools that allow us to balance the risk and reward of our portfolio.",
+          "This process involves the use of mathematical and statistical models to assess the profitability of investments.",
       },
     ],
   ];
