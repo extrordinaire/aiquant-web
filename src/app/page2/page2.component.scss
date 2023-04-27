@@ -1,29 +1,8 @@
-#PANELPRINCIPAL {
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-#PANELPRINCIPAL *{
-    font-family: Nimbus Sans D OT Bold;
-}
 
 
-.FondoUno {
-    background-color: white;
-}
 
-.PanelContenido {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-}
 
-.EspacioSideNav{
-    padding-top: 5.7em;
-}
+
 
 .MensajePrincipal {
     width: 13em;

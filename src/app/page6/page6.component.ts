@@ -1,27 +1,20 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, EventEmitter, OnInit, Output } from "@angular/core"
+import { TranslateService } from "@ngx-translate/core"
 
 @Component({
-  selector: 'app-page6',
-  templateUrl: './page6.component.html',
-  styleUrls: ['./page6.component.scss']
+  selector: "app-page6",
+  templateUrl: "./page6.component.html",
+  styleUrls: ["./page6.component.scss", "../app.shared.scss"],
 })
 export class Page6Component implements OnInit {
+  currentLang: string = ""
 
-  currentLang: string = ''
-
-  constructor(
-    public translate: TranslateService
-  ) {
-    this.currentLang = translate.defaultLang;
-    this.translate.onLangChange.subscribe(
-      (response: any) => {
-        this.currentLang = response.lang;
-      }
-    )
+  constructor(public translate: TranslateService) {
+    this.currentLang = translate.defaultLang
+    this.translate.onLangChange.subscribe((response: any) => {
+      this.currentLang = response.lang
+    })
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

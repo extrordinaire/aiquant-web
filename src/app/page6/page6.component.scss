@@ -1,31 +1,5 @@
-#PANELPRINCIPAL {
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-#PANELPRINCIPAL *{
-    font-family: Nimbus Sans D OT Bold;
-}
 
 
-.FondoUno {
-    background-color: white;
-}
-
-.EspacioSideNav{
-    padding-top: 5.7em;
-}
-
-.PanelSubContenidoDos {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 80%;
-    width: 100%;
-}
 .MensajePrincipal {
     width: 16em;
     font-family: Nimbus Sans D OT Bold;

@@ -1,0 +1,41 @@
+:root {
+    --bg-light: #FAFAFA;
+    --bg-dark: #0A0506;
+    --bg-color: var(--bg-dark);
+}
+
+#panel {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#panel *{
+    font-family: Nimbus Sans D OT Bold;
+}
+
+.background {
+    background-color: var(--bg-color);
+}
+
+.EspacioSideNav{
+    padding-top: 5.7em;
+}
+
+.PanelContenido {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.PanelSubContenidoDos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}

@@ -1,17 +1,4 @@
-#PANELPRINCIPAL {
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#PANELPRINCIPAL * {
-    font-family: Nimbus Sans D OT Bold;
-}
-
-.FondoDos {
+.background {
     background-color: black;
 }
 
@@ -138,7 +125,7 @@
 }
 
 @media (max-width: 742px) {
-    #PANELPRINCIPAL {
+    #panel {
         display: inline-block;
         padding-top: 12em;
         width: 100%;

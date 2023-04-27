@@ -1,27 +1,7 @@
-.FondoHome {
+.background-home {
     background-image: url("/assets/img/animated-img.svg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#PANELPRINCIPAL {
-    height: 100%;
-    overflow-y: hidden;
-}
-#PANELPRINCIPAL *{
-    font-family: Nimbus Sans D OT Bold;
-}
-
-.PanelContenido {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-}
-
-.EspacioSideNav{
-    padding-top: 5.7em;
 }
 
 .MensajePrincipalDos {
